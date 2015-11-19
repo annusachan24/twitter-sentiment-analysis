@@ -1,0 +1,11 @@
+import twitter
+CONSUMER_KEY='eUadm7DqScE1t3xrtIDKF3hGL'
+CONSUMER_SECRET='wCnh3HDaXwjifaI2ZH7FypghAgtb5C7N1uce2MIV48nyCVUazx'
+OAUTH_TOKEN='1607890662-3ZW6hpDiaJkU1c4X4XQPx2xAznCn71lkem1BKVa'
+OAUTH_TOKEN_SECRET='9O52oVBx2ha5u2lzQQ9oZTP7YP0Gh0S8KRkFyq2G5y6Y4'
+
+auth= twitter.oauth.OAuth(OAUTH_TOKEN,OAUTH_TOKEN_SECRET,CONSUMER_KEY,CONSUMER_SECRET)
+
+twitter_api = twitter.Twitter(auth=auth)
+
+print twitter_api
